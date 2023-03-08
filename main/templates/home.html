@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Home {% endblock title%} 
+{% block homeactive %} active {% endblock homeactive %}
+{% block body %}
+
+<div class="container-fluid">
+   <div class="row">
+        <div class="col-12 p-0">
+        <div class="bg-image" 
+     style="background-image: url('https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg?auto=compress&cs=tinysrgb&w=2000');
+            height: 100% ; width:100%"> 
+            <div class=" min-vh-100 text-center m-0  d-flex flex-column justify-content-center">
+                <h1 class="display-4">Enter City Name</h1>
+                <form method="get" action="/weather">
+            
+                    <div class="form-group">
+                    <input
+                        type="text"
+                        class="form-control form-control-lg w-75 mr-auto ml-auto"
+                        id="city"
+                        aria-describedby="city name"
+                        placeholder="Enter city name"
+                        name="city"
+                    />
+                
+                    </div>
+                    
+                    <button type="submit" class="btn btn-success">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+{% endblock body %} 
